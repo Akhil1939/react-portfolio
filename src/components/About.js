@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "../assets/img/about.webp";
+import { Link } from "react-scroll";
+import Image from "../assets/img/office.jpg";
 
 export default function About() {
   return (
@@ -14,12 +15,13 @@ export default function About() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <h2 className='text-3xl lg:text"4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 before:-top-[2rem] before:hidden before:lg:block '>Akhil Kukadiya</h2>
-              <p className="mb-4 text-accent"> Freelance web Developer</p>
+              <p className="mb-4 text-accent"> Full Stack Developer</p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, delectus veritatis nihil corporis soluta sit fuga quisquam <br/> quaerat odit! Pariatur, illum adipisci. Magni doloribus error placeat!</p>
             </div> 
-            <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all"> Contact me</button>
-          </div>
+           <Link className="transition-all duration-300" to="contact" smooth={true}
+                duration={500}> <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all" > Contact me</button></Link>
+          </div> 
         </div>
       </div> 
     </section>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import Logo from "../assets/Aklogo.svg";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
@@ -20,17 +21,24 @@ export default function Header() {
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <a href="#">
+        <Link
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="transition-all duration-300"
+          to="home"
+        >
           <img src={Logo} alt="" />
-        </a>
+        </Link>
         <div className="hidden lg:block">
-            <Nav />
+          <Nav />
         </div>
         <div className="hidden lg:block">
-        <Socials />
+          <Socials />
         </div>
         <div className="lg:hidden">
-        <NavMobile />
+          <NavMobile />
         </div>
       </div>
     </header>

@@ -1,8 +1,57 @@
 import React from "react";
 import { Button } from "react-scroll";
 import { contact } from "../data";
+import emailjs from 'emailjs-com';
+import { toast } from "react-toastify";
 
 export default function ContactUs() {
+  const SERVICE_ID = "service_hfv9q02";
+const TEMPLATE_ID =  "template_jr2l53k";
+const USER_ID = "c19ZJhS4xXlKXPbP4";  
+
+const handleOnSubmit = (e) => {
+  e.preventDefault();
+  toast.success('thank you for contact me', {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: false,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+  emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+    .then((result) => {
+      console.log(result.text);
+      toast.success('massage sent', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+      
+      
+    }, (error) => {
+      console.log(error.text);
+      toast.error('something went wrong', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+     
+    });
+  e.target.reset()
+};
   return (
     <section className=" section bg-primary" id="contact">
       <div className="container mx-auto">
@@ -36,14 +85,14 @@ export default function ContactUs() {
             })}
           </div>
 
-          <form className="space-y-8 w-full max-w-[780px]" action="">
+          <form className="space-y-8 w-full max-w-[780px]" action="" onSubmit={handleOnSubmit}>
             <div className="flex gap-8">
-                <input className="input" type="text"  placeholder="Your Name"/>
-                <input className="input" type="text"  placeholder="Your Email" />
+                <input className="input" type="text" name="user_name"  placeholder="Your Name"/>
+                <input className="input" type="text" name="user_email"  placeholder="Your Email" />
             </div>
-            <input type="text" className="input" placeholder="Subject" />
-            <textarea className="textarea" placeholder="Your Message"></textarea>
-            <button className="btn btn-lg bg-accent hover:bg-accent-hover">Send Message</button>
+            <input type="text" className="input" name="user_subject" placeholder="Subject" />
+            <textarea className="textarea" name="user_message" placeholder="Your Message"></textarea>
+            <button className="btn btn-lg bg-accent hover:bg-accent-hover" type="submit">Send Message</button>
           </form> 
         </div>
       </div>

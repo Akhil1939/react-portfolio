@@ -1,6 +1,7 @@
 import React from 'react'
 import { social } from '../data'
 import Logo from "../assets/Aklogo.svg";
+import './component.css'
 
 export default function Footer() {
   return (
@@ -21,7 +22,7 @@ export default function Footer() {
                 <div>
                     <img src={Logo} alt="" />
                 </div>
-                <p><span className='text-accent'>"</span> If you've got an idea, start today <span className='text-accent'>"</span> </p>
+                <p className='animate-character-footer'><span className='text-accent animate-charcter'>"</span> If you've got an idea, start today <span className='text-accent'>"</span> </p>
             </div>
         </div>
       

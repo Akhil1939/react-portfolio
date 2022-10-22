@@ -1,3 +1,4 @@
+import React from 'react';
 //  icons
 import {
   FiYoutube,
@@ -20,23 +21,26 @@ import BehanceBrandIcon from './assets/img/brands/behance.png';
 import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // projects images
-import Project1 from './assets/img/projects/p1.webp';
-import Project2 from './assets/img/projects/p2.webp';
-import Project3 from './assets/img/projects/p3.webp';
+import Project1 from './assets/img/projects/p1.png';
+import Project2 from './assets/img/projects/p2.png';
+import Project3 from './assets/img/projects/p3.png';
 import Project4 from './assets/img/projects/p4.webp';
 import Project5 from './assets/img/projects/p5.webp';
 import Project6 from './assets/img/projects/p6.webp';
 
 // skills images
-import SkillImg1 from './assets/img/skills/html5.png';
-import SkillImg2 from './assets/img/skills/css3.png';
-import SkillImg3 from './assets/img/skills/js.png';
-import SkillImg4 from './assets/img/skills/reactjs.png';
-import SkillImg5 from './assets/img/skills/nextjs.png';
-import SkillImg6 from './assets/img/skills/nodejs.png';
-import SkillImg7 from './assets/img/skills/git.png';
-import SkillImg8 from './assets/img/skills/figma.png';
+import html from './assets/img/skills/html.png'
+import css from './assets/img/skills/css.png'
+import github from './assets/img/skills/github.png'
+import javascript from './assets/img/skills/javascript.png'
+import reactImage from './assets/img/skills/react.png'
+import nodejs from './assets/img/skills/node.png'
+import expressjs from './assets/img/skills/express.png'
+import tailwind from './assets/img/skills/tailwind.png'
+import mongodb from './assets/img/skills/mongodb.png'
+import cpp from './assets/img/skills/cpp.png'
 
+ 
 // testimonial images
 import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
 import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
@@ -60,10 +64,10 @@ export const navigation = [
     name: 'services',
     href: 'services',
   },
-  {
-    name: 'testimonials',
-    href: 'testimonials',
-  },
+  // {
+  //   name: 'testimonials',
+  //   href: 'testimonials',
+  // },
   {
     name: 'contact',
     href: 'contact',
@@ -119,39 +123,22 @@ export const projectsData = [
   {
     id: '1',
     image: Project1,
-    name: 'project name 1',
-    category: 'UI/UX design',
+    name: 'Visitor Management System',
+    link: '',
   },
   {
     id: '2',
     image: Project2,
-    name: 'project name 2',
-    category: 'web development',
+    name: "Writer's Deck",
+    link: '',
   },
   {
     id: '3',
     image: Project3,
-    name: 'project name 3',
-    category: 'UI/UX design',
+    name: 'MediaMave: the new nutral',
+    link:"",
   },
-  {
-    id: '4',
-    image: Project4,
-    name: 'project name 4',
-    category: 'branding',
-  },
-  {
-    id: '5',
-    image: Project5,
-    name: 'project name 5',
-    category: 'web development',
-  },
-  {
-    id: '6',
-    image: Project6,
-    name: 'project name 6',
-    category: 'web development',
-  },
+  
 ];
 
 // projects
@@ -170,33 +157,70 @@ export const projectsNav = [
   },
 ];
 
-// skill
+
 export const skills = [
-  {
-    image: SkillImg1,
-  },
-  {
-    image: SkillImg2,
-  },
-  {
-    image: SkillImg3,
-  },
-  {
-    image: SkillImg4,
-  },
-  {
-    image: SkillImg5,
-  },
-  {
-    image: SkillImg6,
-  },
-  {
-    image: SkillImg7,
-  },
-  {
-    image: SkillImg8,
-  },
-];
+      {
+          id: 1,
+          src: html,
+          title: 'HTML5',
+          style: 'shadow-orange-500',
+      },
+      {
+          id: 2,
+          src: css,
+          title: 'CSS3',
+          style: 'shadow-blue-500',
+      },
+      {
+          id: 3,
+          src: javascript,
+          title: 'JavaScript',
+          style: 'shadow-yellow-500',
+      },
+      {
+          id: 4,
+          src: reactImage,
+          title: 'React.Js',
+          style: 'shadow-blue-600',
+      },
+      {
+          id: 5,
+          src: tailwind,
+          title: 'Tailwind',
+          style: 'shadow-sky-400',
+      },
+      {
+          id: 6,
+          src: nodejs,
+          title: 'Node.Js',
+          style: 'shadow-[#68A063]',
+      },
+      {
+          id: 7,
+          src: expressjs,
+          title: 'Express Js',
+          style: 'shadow-[#3FA037]',
+      },
+      {
+          id: 8,
+          src: mongodb,
+          title: 'Mongo DB',
+          style: 'shadow-[#3F3E42]',
+      },
+      {
+          id: 9,
+          src: cpp,
+          title: 'C++ 14',
+          style: 'shadow-blue-500',
+      },
+      {
+          id: 10,
+          src: github,
+          title: 'Github',
+          style: 'shadow-gray-400',
+      }
+  ];
+
 
 // services
 export const services = [

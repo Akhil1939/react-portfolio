@@ -29,7 +29,7 @@ export default function Projects() {
 
   return (
     <div>
-      <nav className="mb-12 max-w-xl mx-auto">
+      {/* <nav className="mb-12 max-w-xl mx-auto">
         <ul className="flex flex-col md:flex-row justify-evenly items-center text-white">
           {projectsNav.map((item, index) => {
            
@@ -46,7 +46,7 @@ export default function Projects() {
             );
           })}
         </ul>
-      </nav>
+      </nav> */}
       <section className="grid lg:grid-cols-3 gap-y-12 lg:gap-x-8 lg:gap-y-8">
         { 
           projects.map((item)=>{
