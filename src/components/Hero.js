@@ -22,8 +22,9 @@ export default function Hero() {
               Developer
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              natus officia iusto quaerat, cumque alias numquam.
+              IT student with Dedicated Technical Skills. Building quality
+              websites with HTML/CSS/JS and React Js framework. Love to Working
+              in React Js for building amazing web apps.
             </p>
             <Link
               className="transition-all duration-300"

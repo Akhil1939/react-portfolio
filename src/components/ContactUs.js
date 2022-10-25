@@ -60,25 +60,23 @@ const handleOnSubmit = (e) => {
             Contact Me
           </h2>
           <p className="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-            sequi mollitia voluptatum aliquam saepe, officia molestias
-            consequatur at corporis quos maxime, nulla omnis commodi veritatis.
+          To obtain a creative and challenging position in an organization that gives me an opportunity for self improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.
           </p>
         </div>
 
         <div className="flex flex-col lg:gap-x-8 lg:flex-row">
           <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
             {contact.map((item, index) => {
-              const { icon, title, subtitle, description } = item;
+              const { icon, title, subtitle, description, href } = item;
               return (
-                <div className="flex flex-col lg:flex-row gap-x-4" key={index}>
+                <div className="flex flex-row gap-x-4" key={index}>
                   <div className="text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
                     {icon}
                   </div>
                   <div>
                     <h4 className="font-body text-xl mb-1">{title}</h4>
                     <p className="mb-1 ">{subtitle}</p>
-                    <p className="text-accent font-normal">{description}</p>
+                    <a href={href} className="text-accent font-normal">{description}</a>
                   </div>
                 </div>
               );
@@ -87,11 +85,11 @@ const handleOnSubmit = (e) => {
 
           <form className="space-y-8 w-full max-w-[780px]" action="" onSubmit={handleOnSubmit}>
             <div className="flex gap-8">
-                <input className="input" type="text" name="user_name"  placeholder="Your Name"/>
-                <input className="input" type="text" name="user_email"  placeholder="Your Email" />
+                <input className="input" type="text" name="user_name"  placeholder="Your Name" required/>
+                <input className="input" type="email" name="user_email"  placeholder="Your Email" required />
             </div>
             <input type="text" className="input" name="user_subject" placeholder="Subject" />
-            <textarea className="textarea" name="user_message" placeholder="Your Message"></textarea>
+            <textarea className="textarea" name="user_message" placeholder="Your Message" required></textarea>
             <button className="btn btn-lg bg-accent hover:bg-accent-hover" type="submit">Send Message</button>
           </form> 
         </div>

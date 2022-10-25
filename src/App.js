@@ -18,7 +18,7 @@ import { toast } from "react-toastify";
 
 const App = () => {
   useEffect(() => { 
-    toast('🦄 Wow so easy!', {
+    toast('🎇 Happy Diwali 🎇', {
       position: "top-center",
       autoClose: 4000,
       hideProgressBar: false,
