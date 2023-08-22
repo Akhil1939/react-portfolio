@@ -7,7 +7,7 @@ export default function Services() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-services relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-15 before:hidden before:lg:block">
-            What can i do as an IT engineer
+            What can I do as an IT engineer ?
           </h2>
 
           <p className="subtitle">
