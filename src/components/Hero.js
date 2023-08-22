@@ -1,7 +1,6 @@
 import React from "react";
 
 import ManImage from "../assets/img/banner-man.png";
-import { MovingComponent } from "react-moving-text";
 import "./component.css";
 import { Link } from "react-scroll";
 export default function Hero() {

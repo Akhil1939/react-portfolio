@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import { projectsData, projectsNav } from "../data";
+import { projectsData } from "../data";
 import Project from "./Project";
 export default function Projects() {
   const [item, setItem ] = useState({ name: 'all' });
   const [projects, setProjects] = useState([]);
-  const [active, setActive] = useState(0);
+  const [ setActive] = useState(0);
 
 
   useEffect(() => {

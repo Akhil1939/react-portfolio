@@ -8,7 +8,6 @@ import {
   FiLayout,
   FiSettings,
   FiPenTool,
-  FiTag,
   FiMail,
   FiMapPin,
   FiLinkedin

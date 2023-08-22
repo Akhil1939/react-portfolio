@@ -7,10 +7,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
-import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
 import { toast } from "react-toastify";
 
 
@@ -18,7 +16,7 @@ import { toast } from "react-toastify";
 
 const App = () => {
   useEffect(() => { 
-    toast('🎇 Happy Diwali 🎇', {
+    toast('🎇 Welcome fellas 🎇', {
       position: "top-center",
       autoClose: 4000,
       hideProgressBar: false,
