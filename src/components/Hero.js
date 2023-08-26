@@ -20,9 +20,9 @@ export default function Hero() {
               Full Stack <br />
               Developer
             </h1>
-            <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
+            <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[500px] text-lg text-center lg:text-left">
               
-Passionate IT student with a strong foundation in web development and a focus on creating exceptional online experiences. Proficient in HTML, CSS, and JavaScript, I initially built quality websites before expanding my skill set to include the React.js framework. My enthusiasm for crafting remarkable web applications led me to explore Angular, .NET, and SQL Server. With an ever-expanding toolkit, I am dedicated to delivering innovative solutions that seamlessly blend creativity and functionality to leave a lasting impact.
+Passionate IT student with a strong foundation in web development and a focus on creating exceptional online experiences. Proficient in HTML, CSS, and JavaScript. My enthusiasm for crafting remarkable web applications led me to explore Angular, .NET, and SQL Server. With an ever-expanding toolkit, I am dedicated to delivering innovative solutions that seamlessly blend creativity and functionality to leave a lasting impact.
             </p>
             <Link
               className="transition-all duration-300"
